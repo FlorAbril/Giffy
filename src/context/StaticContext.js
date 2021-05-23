@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Context = React.createContext({
+const StaticContext = React.createContext({
     name : 'sin provider',
     estado: true
 })
 
-export default Context
+
+export default StaticContext
