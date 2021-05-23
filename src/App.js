@@ -20,6 +20,10 @@ export default function App() {
               component={Home}
               path="/"
               />
+              <Route
+              component={Home}
+              path="/Giffy"
+              />
             <Route
               component={SearchResults}
               path="/search/:keyword"  />
