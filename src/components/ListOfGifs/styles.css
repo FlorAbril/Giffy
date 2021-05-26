@@ -1,5 +1,5 @@
 :root {
-  --results-columns: 2;
+  --results-columns: 1;
 }
 
 .ListOfGifs {
@@ -18,12 +18,12 @@
 
 @media (min-width: 600px) {
   :root {
-    --results-columns: 3;
+    --results-columns: 2;
   }
 }
 
 @media (min-width: 800px) {
   :root {
-    --results-columns: 4;
+    --results-columns: 3;
   }
 }

@@ -1,3 +1,7 @@
+:root{
+  --background: rgb(129, 129, 191);
+  --text-color:rgb(0,0,0)
+}
 .App {
   text-align: center;
 }
@@ -6,18 +10,25 @@
   object-fit: contain;
   height: 250px;
 }
-
-.App-title {
-  color: #8d5aa4;
-}
-
 .App-content {
-  background-color: #b2ebfa;
-  color: white;
+  background-color: var(--background);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   min-height: 100vh;
   padding: 16px;
   text-align: left;
+}
+
+.wrapper-gif{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-column-gap: 1em;
+}
+
+@media (max-width: 800px) {
+  .wrapper-gif {
+    display: block;
+  }
 }
