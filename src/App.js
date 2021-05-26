@@ -13,7 +13,7 @@ export default function App() {
       <div className="App">
         <section className="App-content">
           <Link to="/">
-            <img className="App-logo" alt='Giffy logo' src='./logo.png' />
+            <img className="App-logo" alt='Giffy logo' src='./logo.svg' />
           </Link>
           <GifsContextProvider>
             <Route
