@@ -25,15 +25,14 @@ export default function Home() {
         <input placeholder="Buscar gifs" onChange={handleChange} type="text" value={keyword}/>
       </form>
     {
-      loading
-        && <Spinner />
-    }
+      loading ? <Spinner /> :
      <div className="wrapper-gif">
       {loading 
         || <ListOfGifs gifs={gifs} title="Última búsqueda" />
       }
       <TrendingSearches/>
      </div>
+    }
     </>
   )
 }
