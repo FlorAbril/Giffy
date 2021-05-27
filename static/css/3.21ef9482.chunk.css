@@ -1,0 +1,2 @@
+.Category-title{color:var(--text-color);font-weight:700}.Category-list{list-style-position:inside;display:flex;flex-wrap:wrap;justify-content:space-evenly}.Category-link{color:var(--text-color);font-size:1em;transition:color .1s ease-in}.Category-link:hover{color:#8c55a2}@media screen and (min-width:800px){.Category-list{display:list-item}.Category-list li:before{color:#8c55a2;margin-right:.5em;font-size:1em}}
+/*# sourceMappingURL=3.21ef9482.chunk.css.map */
