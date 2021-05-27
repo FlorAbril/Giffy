@@ -11,8 +11,7 @@ export default function SearchResults ({ params }) {
   return <>
     {loading
       ? <Spinner />
-      :<> <h3>{decodeURI(keyword)}</h3>
-        <ListOfGifs gifs={gifs} /></>
+      :<ListOfGifs gifs={gifs} title={decodeURI(keyword)} />
     }
     <button onClick={handleNextPage} style={{width :'fit-content',fontSize: '20px',marginTop:'1em'}} >Get next page</button>
   </>
