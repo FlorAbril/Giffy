@@ -1,0 +1,2 @@
+.Category-title{color:var(--text-color);font-weight:700}.Category-list{list-style-position:inside;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-evenly;justify-content:space-evenly}.Category-link{color:var(--text-color);font-size:1em;transition:color .1s ease-in}.Category-link:hover{color:#8c55a2}@media screen and (min-width:800px){.Category-list{display:list-item}.Category-list li:before{color:#8c55a2;margin-right:.5em;font-size:1em}}
+/*# sourceMappingURL=3.c44003d6.chunk.css.map */
