@@ -6,7 +6,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
   grid-gap: 0.5em;
-  min-height: 100vh;
 }
 
 .ListOfGifs-item {
@@ -14,6 +13,17 @@
   background-color: #eee;
   display: inline-block;
   width: 100%;
+}
+
+.button{
+  font-size: medium;
+    width: 10em;
+    margin-top: 0.5em;
+    background-color: rgb(73 73 136);
+    padding: 0.5em;
+    color: white;
+    border: solid white 1px;
+    border-radius: 1.5em;
 }
 
 @media (min-width: 600px) {
