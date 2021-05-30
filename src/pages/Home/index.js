@@ -1,30 +1,24 @@
-import React, { useState } from "react"
+import React, { useCallback} from "react"
 import {useLocation } from "wouter"
 import {useGifs} from 'hooks/useGifs'
 import Spinner from 'components/Spinner'
 import ListOfGifs from 'components/ListOfGifs'
 import LazyTrending from 'components/TrendingSearches/index'
+import SearchForm from "components/SearchForm"
 
 
 
 export default function Home() {
-  const [keyword,setKeyword]= useState('')
   const [, pushLocation] = useLocation()
   const {loading,gifs,keywordToUse: lastKeyword} = useGifs()
 
-  const handleSubmit = (event, keyword) =>{
-    event.preventDefault()
+  const handleSubmit = useCallback(( {keyword}) =>{
     pushLocation(`/search/${keyword}`)
-  }
-  const handleChange = event =>{
-    setKeyword(event.target.value)
-  }
+  },[pushLocation])
+  
   return (
     <>
-      <form onSubmit={(e)=>handleSubmit(e,keyword)}>
-        <button className='search-button'>Buscar</button>
-        <input placeholder="Buscar gifs" onChange={handleChange} type="text" value={keyword}/>
-      </form>
+     <SearchForm onSubmit={handleSubmit}/>
      
     {
       loading ? <Spinner /> :
