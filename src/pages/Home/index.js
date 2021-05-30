@@ -22,11 +22,14 @@ export default function Home() {
   return (
     <>
       <form onSubmit={(e)=>handleSubmit(e,keyword)}>
+        <button className='search-button'>Buscar</button>
         <input placeholder="Buscar gifs" onChange={handleChange} type="text" value={keyword}/>
       </form>
+     
     {
       loading ? <Spinner /> :
      <div className="wrapper-gif">
+       
       {loading 
         ||  <ListOfGifs gifs={gifs} title={`Última búsqueda: ${decodeURI(lastKeyword)}`} lastKeyword={lastKeyword} handleSubmit={handleSubmit}/> 
       }
@@ -36,6 +39,4 @@ export default function Home() {
     </>
   )
 }
-// // 
-// {/* <button onClick={(e)=>handleSubmit(e, lastKeyword)}>Ver más gifs</button> */}
-// // 
+
