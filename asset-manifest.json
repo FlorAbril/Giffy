@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/Giffy/static/css/main.1478b926.chunk.css",
-    "main.js": "/Giffy/static/js/main.59790204.chunk.js",
-    "main.js.map": "/Giffy/static/js/main.59790204.chunk.js.map",
-    "runtime-main.js": "/Giffy/static/js/runtime-main.aae6011b.js",
-    "runtime-main.js.map": "/Giffy/static/js/runtime-main.aae6011b.js.map",
-    "static/js/2.0406fd01.chunk.js": "/Giffy/static/js/2.0406fd01.chunk.js",
-    "static/js/2.0406fd01.chunk.js.map": "/Giffy/static/js/2.0406fd01.chunk.js.map",
+    "main.js": "/Giffy/static/js/main.71860cac.chunk.js",
+    "main.js.map": "/Giffy/static/js/main.71860cac.chunk.js.map",
+    "runtime-main.js": "/Giffy/static/js/runtime-main.e73f82c8.js",
+    "runtime-main.js.map": "/Giffy/static/js/runtime-main.e73f82c8.js.map",
+    "static/js/2.cbe3c6d9.chunk.js": "/Giffy/static/js/2.cbe3c6d9.chunk.js",
+    "static/js/2.cbe3c6d9.chunk.js.map": "/Giffy/static/js/2.cbe3c6d9.chunk.js.map",
     "static/css/3.c44003d6.chunk.css": "/Giffy/static/css/3.c44003d6.chunk.css",
-    "static/js/3.12ab94d2.chunk.js": "/Giffy/static/js/3.12ab94d2.chunk.js",
-    "static/js/3.12ab94d2.chunk.js.map": "/Giffy/static/js/3.12ab94d2.chunk.js.map",
+    "static/js/3.b10bf322.chunk.js": "/Giffy/static/js/3.b10bf322.chunk.js",
+    "static/js/3.b10bf322.chunk.js.map": "/Giffy/static/js/3.b10bf322.chunk.js.map",
     "index.html": "/Giffy/index.html",
-    "precache-manifest.366b85b458b6514c389512a6c1f4c3e0.js": "/Giffy/precache-manifest.366b85b458b6514c389512a6c1f4c3e0.js",
+    "precache-manifest.8550e1621f2d1694fcb71c8bb5e76a3f.js": "/Giffy/precache-manifest.8550e1621f2d1694fcb71c8bb5e76a3f.js",
     "service-worker.js": "/Giffy/service-worker.js",
     "static/css/3.c44003d6.chunk.css.map": "/Giffy/static/css/3.c44003d6.chunk.css.map",
     "static/css/main.1478b926.chunk.css.map": "/Giffy/static/css/main.1478b926.chunk.css.map",
-    "static/js/2.0406fd01.chunk.js.LICENSE.txt": "/Giffy/static/js/2.0406fd01.chunk.js.LICENSE.txt",
+    "static/js/2.cbe3c6d9.chunk.js.LICENSE.txt": "/Giffy/static/js/2.cbe3c6d9.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/Giffy/static/media/logo.6579f55f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.aae6011b.js",
-    "static/js/2.0406fd01.chunk.js",
+    "static/js/runtime-main.e73f82c8.js",
+    "static/js/2.cbe3c6d9.chunk.js",
     "static/css/main.1478b926.chunk.css",
-    "static/js/main.59790204.chunk.js"
+    "static/js/main.71860cac.chunk.js"
   ]
 }
