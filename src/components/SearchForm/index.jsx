@@ -5,9 +5,9 @@ function SearchForm({onSubmit}) {
 
     const handleSubmit = (event, keyword) =>{
         event.preventDefault()
-        onSubmit({keyword})
+        onSubmit(keyword)
       }
-      const handleChange = event =>{
+    const handleChange = event =>{
         setKeyword(event.target.value)
       }
 

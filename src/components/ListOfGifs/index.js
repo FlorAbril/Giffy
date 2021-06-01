@@ -17,7 +17,7 @@ export default function ListOfGifs ({gifs,title,lastKeyword,handleSubmit}) {
               )
             }
           </div>
-          {lastKeyword && <button className='button' onClick={(e)=>handleSubmit(e, lastKeyword)}>Ver más</button>}
+          {lastKeyword && <button className='button' onClick={()=>handleSubmit(lastKeyword)}>Ver más</button>}
           
   
     </div>
