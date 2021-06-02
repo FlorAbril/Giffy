@@ -5,10 +5,11 @@ import {useGifs} from 'hooks/useGifs'
 import useNearScreen from 'hooks/useNearScreen'
 import debounce from 'just-debounce-it'
 import { Helmet } from 'react-helmet'
+import SearchForm from 'components/SearchForm'
 
 export default function SearchResults ({ params }) {
-  const { keyword } = params
-  const {loading,gifs,setPage} = useGifs({keyword})
+  const { keyword, rating='g',} = params
+  const {loading,gifs,setPage} = useGifs({keyword,rating})
   const externalRef = useRef()
   const {isNearScreen} = useNearScreen({
     externalRef: loading ? null: externalRef,
@@ -27,6 +28,7 @@ export default function SearchResults ({ params }) {
 
 
   return <>
+     <SearchForm initialKeyword={keyword} initialRating={rating}/>
     {loading
       ? <Spinner />
       : <> 
@@ -34,7 +36,7 @@ export default function SearchResults ({ params }) {
             <title>{title}</title>
             <meta name='description' content={title}></meta>
           </Helmet>
-          <ListOfGifs gifs={gifs} title={decodeURI(keyword)} />
+          <ListOfGifs gifs={gifs} title={`Gifs de: ${decodeURI(keyword)}`}/>
           <div id="visor" ref={externalRef} ></div>
         </>
     }
