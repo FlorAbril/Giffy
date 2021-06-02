@@ -1,0 +1,32 @@
+.search-button{
+    font-size: 0.8rem;
+   
+    height: min-content;
+    background-color: rgb(73 73 136);
+      padding: 0.5em 1em;
+      color: white;
+      border: solid white 1px;
+      border-radius: 6px;
+     
+  }
+  .input-form{
+    margin: 0.5em;
+  
+  }
+  
+  .search-form{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+  
+  }
+
+  .search-form div {display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;}
+  
+  .rating-filter{
+    height: min-content;
+    margin-left: 0.5em;
+  }

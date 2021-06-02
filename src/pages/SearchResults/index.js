@@ -15,7 +15,7 @@ export default function SearchResults ({ params }) {
     externalRef: loading ? null: externalRef,
     once: false
   })
-  const title = gifs ? `Gifs de ${decodeURI(keyword)}` : ''
+  const title = gifs ? `Gifs de ${decodeURI(keyword)} | Giffy` : ''
   
  
   const debounceHandleNextpage = useCallback(
