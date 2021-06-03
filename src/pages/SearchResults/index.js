@@ -8,8 +8,8 @@ import { Helmet } from 'react-helmet'
 import SearchForm from 'components/SearchForm'
 
 export default function SearchResults ({ params }) {
-  const { keyword, rating='g',} = params
-  const {loading,gifs,setPage} = useGifs({keyword,rating})
+  const { keyword, rating,lang} = params
+  const {loading,gifs,setPage} = useGifs({keyword,rating,lang})
   const externalRef = useRef()
   const {isNearScreen} = useNearScreen({
     externalRef: loading ? null: externalRef,
