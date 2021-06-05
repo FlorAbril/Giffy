@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import Gif from 'components/Gif'
 import useSingleGif from 'hooks/useSingleGif'
 import Spinner from 'components/Spinner'
 import { Redirect } from 'wouter'
 import {Helmet} from "react-helmet";
+import './styles.css'
+import useLocation from 'wouter/use-location'
 
 
 export default function Detail ({ params }) {
   const {gif,isLoading,isError} = useSingleGif({id: params.id})
   const title = gif ? gif.title : ''
+
+  const [, pushLocation] = useLocation()
+  
+  const handleSubmit = useCallback(() =>{
+    pushLocation(`/Giffy`)
+  },[pushLocation])
  
 
   if(isLoading){ 
@@ -26,7 +34,10 @@ export default function Detail ({ params }) {
     <Helmet>
       <title>{title} | Giffy</title>
     </Helmet>
-    <Gif {...gif}></Gif>
+    <div className='gif-wrap'>
+      <Gif {...gif}></Gif>
+      <button className='button' onClick={()=>handleSubmit()}>Back to home</button>
+    </div>
   </>
   )
 }

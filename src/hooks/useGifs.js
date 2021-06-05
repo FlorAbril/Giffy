@@ -3,7 +3,7 @@ import getGifs from 'services/getGifs'
 import GifsContext from 'context/GifsContext'
 
 const INITIAL_PAGE = 0
-export function useGifs({keyword,rating,lang} = {keyword: null}) {
+export function useGifs({keyword,rating,lang}={keyword:null}) {
     const [loading, setLoading] = useState(false)
     const [loadingNextPage, setLoadingNextPage] = useState(false)
     const {gifs,setGifs} = useContext(GifsContext)
@@ -33,5 +33,5 @@ export function useGifs({keyword,rating,lang} = {keyword: null}) {
             })
     },[keywordToUse, page,setGifs,rating,lang])
 
-    return{loading,loadingNextPage,gifs,setPage,keywordToUse}
+    return{loading,loadingNextPage,gifs,setPage,keywordToUse,lang}
 }

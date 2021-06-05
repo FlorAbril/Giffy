@@ -28,7 +28,7 @@ export default function SearchResults ({ params }) {
 
 
   return <>
-     <SearchForm initialKeyword={keyword} initialRating={rating}/>
+     <SearchForm initialKeyword={keyword} initialRating={rating} initialLang={lang}/>
     {loading
       ? <Spinner />
       : <> 

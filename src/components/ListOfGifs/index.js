@@ -3,7 +3,7 @@ import Gif from 'components/Gif'
 import './styles.css'
 import {useLocation } from "wouter"
 
-export default function ListOfGifs ({gifs,title,lastKeyword}) {
+export default function ListOfGifs ({gifs,title,lastKeyword}={lastKeyword:null}) {
   const [, pushLocation] = useLocation()
   
   const handleSubmit = useCallback((keyword) =>{
