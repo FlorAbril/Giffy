@@ -1,51 +1,38 @@
-.form-wrap{
+.form-wrap {
   display: flex;
   justify-content: center;
-
 }
 
-.search-form{
+.search-form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   width: min-content;
   margin: 0;
-
 }
 
-.search-button{
+.search {
   font-size: 0.8rem;
-  height: min-content;
-  background-color: rgb(73 73 136);
-  padding: 0.5em 1em;
-  color: white;
-  border: solid white 1px;
-  border-radius: 6px;
   margin-left: 0.3em;
-
 }
-  
 
 .input-wrap {
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
   margin-bottom: 0.35em;
-
 }
 
-.filters-wrap{
+.filters-wrap {
   display: flex;
   align-content: center;
-  
 }
 
-.filter{
+.filter {
   height: min-content;
   margin-right: 0.3em;
   border-radius: 0.3em;
   border: 1px solid #ccc;
-
+  cursor: pointer;
 }
-  

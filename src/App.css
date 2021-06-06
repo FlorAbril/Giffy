@@ -1,6 +1,6 @@
-:root{
+:root {
   --background: rgb(129, 129, 191);
-  --text-color:rgb(0,0,0)
+  --text-color: rgb(0, 0, 0);
 }
 .App {
   text-align: center;
@@ -9,9 +9,14 @@
 .App-logo {
   display: flex;
   justify-content: center;
-  height:10rem;
+  height: 10rem;
   object-fit: contain;
 }
+
+.App-logo > img {
+  cursor: pointer;
+}
+
 .App-content {
   background-color: var(--background);
   color: var(--text-color);
@@ -23,13 +28,11 @@
   text-align: left;
 }
 
-.wrapper-gif{
+.wrapper-gif {
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-column-gap: 1em;
 }
-
-
 
 @media (max-width: 800px) {
   .wrapper-gif {

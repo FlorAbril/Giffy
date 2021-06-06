@@ -1,5 +1,9 @@
-.gif-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.gif-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gif-wrap button {
+  margin-top: 0.5em;
 }

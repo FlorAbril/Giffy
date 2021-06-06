@@ -45,7 +45,7 @@ function SearchForm({
             type="text"
             value={keyword}
           />
-          <button className="search-button">Buscar</button>
+          <button className="button search">Buscar</button>
         </div>
         <div className="filters-wrap">
           <select
