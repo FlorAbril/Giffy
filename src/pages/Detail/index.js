@@ -5,16 +5,14 @@ import Spinner from "components/Spinner";
 import { Redirect } from "wouter";
 import { Helmet } from "react-helmet";
 import "./styles.css";
-import useLocation from "wouter/use-location";
 
 export default function Detail({ params }) {
   const { gif, isLoading, isError } = useSingleGif({ id: params.id });
   const title = gif ? gif.title : "";
-
-  const [, pushLocation] = useLocation();
-
-  const handleSubmit = useCallback(() => {
-    window.history.back();
+  let handleSubmit = useCallback(() => {
+    if (typeof window !== undefined) {
+      window.history.back();
+    }
   }, []);
 
   if (isLoading) {
